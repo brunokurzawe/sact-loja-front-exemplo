@@ -7,6 +7,29 @@
   pointer-events: none;
 }
 
+.custom-dropdown {
+  position: relative;
+}
+
+.custom-dropdown .dropdown-menu {
+  position: fixed;
+  z-index: 1000;
+  width: 200px;  /* Exemplo de largura. Ajuste conforme necessário. */
+  display: none;
+}
+
+.custom-dropdown.show .dropdown-menu {
+  display: block;
+}
+
+.margin-bloco-pesquisa {
+  margin-bottom: 20px; /* Ajuste o valor conforme necessário */
+}
+
+.margin-bloco-listagem {
+  margin-bottom: 20px; /* Ajuste o valor conforme necessário */
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
